@@ -1,3 +1,3 @@
-class SchoolClass < ActiverRecord::Base
+class SchoolClass < ActiveRecord::Base
 
 end
