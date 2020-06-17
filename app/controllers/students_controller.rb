@@ -8,13 +8,11 @@ class StudentsController < ApplicationController
   end
 
   def new
+    @student = Student.new
   end
 
   def create
-    @student = Student.new
-    @student.first_name = params[:first_name]
-    @student.last_name = params[:last_name]
-    @student.save
+    @student = Student.create(strong_params(:first_name, :last_name))
     redirect_to student_path(@student)
   end
 
