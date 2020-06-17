@@ -11,7 +11,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @school_class = SchoolClasses.new
+    @school_class = SchoolClass.new
     @school_class.title = params[:title]
     @school_class.room_number = params[:room_number]
     @school_class.save
