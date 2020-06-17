@@ -15,6 +15,6 @@ class SchoolClassesController < ApplicationController
     @school_class.title = params[:title]
     @school_class.room_number = params[:room_number]
     @school_class.save
-    redirect_to school_class_path(@class)
+    redirect_to school_class_path(@school_class)
   end
 end
